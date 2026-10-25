@@ -1,0 +1,23 @@
+{
+  "version": "0.9.0-alpha",
+  "interfaces": {
+    "Forever": "16001",
+    "Era": "11508, 11509",
+    "Retail": "120105"
+  },
+  "scope": "account-wide solo routines and opt-in guild snapshots",
+  "in_game_validated": false,
+  "installed": false,
+  "evidence": "Lua behavior and explicit mock WoW UI/client APIs; no native rendering validation",
+  "files": {
+    "Calendar.lua": "84a3e877443c25fbb1a6bdd0b1f9bce5aca43be960c4391ce999173678ad5af0",
+    "Client.lua": "fff11371096d91f7b136e1c585b0ad80fcc141019c3b1c19760e341f534c5e8a",
+    "Core.lua": "75e82d547da6dc8549814ba8d611ba00195580f08a602ccc6820fa601a8ed717",
+    "Guild.lua": "3253e20a8b45de2c48c43e0a6fa18bddb59e6ffb53fe73e699e5541ac44de730",
+    "Model.lua": "f5693110529d29abcf6bf9f944ef324e407ebfe4d75a1fcec4c9592b8de46618",
+    "README.txt": "5a716d0e035949222cd3e7b103d5e6fde92ac9322eea5c5b4b75133f6e50a383",
+    "UI.lua": "f8e94adf4f264523dd313da3184467325ff740264261789ef9359c4327b7b3d2",
+    "Widgets.lua": "1a37cfbd49f66182cd5313b0d9cdf0dfc4f0f6897dbacc343a29b7aac9e93244",
+    "ZugZugFit.toc": "fb0180edaf8b0a060b4c476ec77abe713e7b401d5836fbd993723f5303f51b9a"
+  }
+}

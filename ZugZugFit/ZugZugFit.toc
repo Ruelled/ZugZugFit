@@ -1,0 +1,13 @@
+## Interface: 16001
+## Title: ZugZugFit
+## Notes: Zug zug! Account-wide movement reminders, calendar, goals and opt-in guild boards.
+## Author: Private project for Jermo
+## Version: 0.9.0-alpha
+## SavedVariables: ZugZugFitDB
+Core.lua
+Model.lua
+Guild.lua
+Widgets.lua
+Calendar.lua
+UI.lua
+Client.lua

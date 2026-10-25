@@ -1,0 +1,81 @@
+Lint: 0 errors, 0 warnings, 0 fatal
+PASS Calendar arithmetic, leap years, weekdays and periods
+PASS Daily schedule once per date, including repeated wall-clock hour
+PASS Spring-forward skipped time fires at next valid tick
+PASS Weekday and active window filters
+PASS Intervals pause AFK/offline and survive reload/character switch
+PASS Snooze persists across midnight and reload with no duplicate interval
+PASS Unhandled yesterday expires, no offline interval backlog
+PASS Trigger coalescing, cooldown, daily cap persist
+PASS Log confirmation is idempotent across reload
+PASS Friday backfill updates Friday goal and week, preserves skipped reminder
+PASS Edit moves credit to actual date and preserves recordedAt
+PASS Goal changes preserve old targets until next period
+PASS Rules can pause, edit, retire without crediting pending occurrences
+PASS Reject invalid dates, future logs, quantities, schedules and schemas
+Core scenarios: 14 passed
+PASS Activity identity links routines, goals and backfill without exact name typing
+PASS Invalid optional goal does not save half a routine
+PASS Schema-1 history migrates transactionally and retains totals
+PASS Bad migration retains original and invalid versions fail closed
+PASS Log edits, delete, restore and rename bump snapshot revision
+PASS Today groups pending, goals and upcoming
+PASS One-off plans appear on the chosen day and never recur
+PASS Reminder goal: stop at goal, edit keeps link, Now forces a prompt
+PASS Share codes round-trip, stay one chat line and reject damage
+PASS Challenges: create, encode, accept adds the move, progress, ended and damaged codes
+Model scenarios: 10 passed
+PASS No traffic or peer data before consent
+PASS Two peers exchange snapshots and rank totals by period/unit
+PASS Fragmented reverse order and duplicates do not double count
+PASS Corrections replace snapshots, including deletion and backfill
+PASS Old revisions cannot undo newer totals
+PASS Alts share a participant; guild switch cancels pending traffic and consent
+PASS Withdrawals remove online peer totals and reject older replays
+PASS Sharing can resume after withdrawal with a newer revision
+PASS Malformed, non-guild, outsider, partial and oversized traffic is ignored
+PASS Pacing, bounded retries and lockdown prevent flood
+PASS Snapshot parser rejects duplicate buckets and nonfinite/negative totals
+Guild scenarios: 11 passed
+PASS Account initialization, native settings launcher, minimap and all five pages
+PASS Reminder builder: exercise tiles, repeat cards, day chips, stepper and live sentence
+PASS Schedule-specific fields show interval and gameplay options only when needed
+PASS Log activity can backfill, edit, delete and restore from the calendar
+PASS Future log validation and goal validation remain in the form
+PASS Calendar month/week navigation and repeated refresh reuse native controls
+PASS Dialog reopening reuses controls without hidden inputs showing through
+PASS Custom activity creation and renaming stay connected to records
+PASS Mailbox trigger coalesces and combat defers real reminder prompt
+PASS Successful readable player Hearthstone only; secret values are ignored
+PASS Eating/drinking coalesce and hidden aura data does not become a trigger
+PASS Zone initialization is silent and new-zone transition triggers
+PASS Announcements require consent and skip corrections/backfills
+PASS Reminder preview has no credit; settings and pause stay synchronized
+PASS Guild UI opt-in registers prefix, sends only guild packets and can withdraw
+PASS Calendar adapter is read-only, handles missing/restricted APIs and valid events
+PASS Closing the main window releases a modal and cannot suppress future prompts
+PASS One-off routine editor uses a date and supports appointment copies
+PASS Minimap launcher has a visible rim, reset command and persistent drag position
+PASS Quick-start template prefills the builder and the list shows a plain sentence
+PASS Builder can create a new exercise and come back with it selected
+PASS Guild board: roster columns, active days and header sorting
+PASS Today shows due cards with icons and the week strip
+PASS Share dialog puts one line in chat; the chat filter links it and import works
+PASS Builder goal row, Test button preview, and goal celebration toast
+PASS Today shows done-today tiles and Now starts a coming-up reminder
+PASS Exercise icons: Blizzard macro icon pages, typed names, and the red light preset
+PASS One-click Done logs the suggested amount, Undo restores it, repeating rows stay on Today
+PASS Challenges: send from Today, chat link, accept a new move, guild list and completion
+PASS Top tabs: every tab is reachable and the selected one is marked
+PASS Triggers tab: add an exercise to an event, start it now, and it is also a reminder
+PASS Finish a dungeon: Mythic+ or queued completion, or leave after a boss kill; a corpse run does not count
+PASS Scroll lists: mouse wheel moves the list, the bar shows, and a refresh keeps the position
+PASS Sample mode fills every list without saving, and the self-test opens every page and dialog
+PASS Today lists a daily reminder after its time, and paused reminders say so with Resume
+PASS WoW calendar adapter: local time, holidays, declined invites, day change and cache
+PASS Reminder before a WoW calendar event: builder, Today row, prompt note, timing window and share code
+PASS Calendar tab shows WoW events in the month grid and day details, in local time
+PASS Add to WoW calendar fills in Blizzard's Create Event window but never calls AddEvent
+Client/UI scenarios: 39 passed (mock APIs, not native rendering)
+Legacy adapter scenarios: 4 passed (settings, aura, comms, unavailable APIs)
+Journey: a new user, 17 steps and 22 clicks passed (mock APIs, not native rendering)

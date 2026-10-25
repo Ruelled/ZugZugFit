@@ -1,0 +1,5 @@
+backups/
+dist/
+verification/install-*.json
+.DS_Store
+.playwright-mcp/
